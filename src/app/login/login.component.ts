@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
      this.service.Login(this.userdetails).subscribe((result)=>{
        this.user=result;
        console.log("user "+JSON.stringify(this.user));
-     })
+     
      if(this.user==undefined){
             //this.router.navigate(['login']);
             this.message="user name/pass is invalid";
@@ -33,6 +33,7 @@ export class LoginComponent implements OnInit {
         this.router.navigate(['home']);
 
       }
+    })
   }
   ngOnInit() {
   }

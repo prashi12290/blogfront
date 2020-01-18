@@ -42,7 +42,7 @@ Login(userdetails){
 }
 
 Logout(){
-  window.sessionStorage.setItem('active',"0");
+  window.sessionStorage.setItem('user',null);
 }
 
 

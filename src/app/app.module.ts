@@ -14,6 +14,8 @@ import { CreateComponent } from './create/create.component';
 import { AuthService } from './auth.service';
 import { SignupComponent } from './signup/signup.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RemoveComponent } from './remove/remove.component';
+import { MyblogsComponent } from './myblogs/myblogs.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { HttpClientModule } from '@angular/common/http';
     ContactUsComponent,
     CategoriesComponent,
     CreateComponent,
-    SignupComponent
+    SignupComponent,
+    RemoveComponent,
+    MyblogsComponent
     
   ],
   imports: [
@@ -44,6 +48,8 @@ import { HttpClientModule } from '@angular/common/http';
       {path:"login",component:LoginComponent},
       {path:"signup",component:SignupComponent},
       {path:"create",component:CreateComponent,canActivate:[AuthService]},
+      {path:"remove",component:RemoveComponent},
+      {path:"myblogs",component:MyblogsComponent}
       //{path:"**",component:NotFoundComponent}
     ])
 

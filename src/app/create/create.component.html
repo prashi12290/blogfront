@@ -1,4 +1,7 @@
+
 <form (ngSubmit)="InsertBlog()">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
     <legend>Create</legend>
 
     <div class="form-group">
@@ -14,7 +17,7 @@
 
     <div class="form-group">
         <label for="body">body</label>
-        <textarea name="body" id="body" cols="150" rows="10" placeholder="body" [(ngModel)]="posts.body"></textarea>
+        <textarea name="body" id="body" cols="50" rows="10" placeholder="body" [(ngModel)]="posts.body"></textarea>
     </div>
 
     <div class="form-group">
@@ -40,7 +43,8 @@
 
     
     <span class="label label-danger">{{message}}</span>
-    
+    </div>
+    <div class="col-md-4"></div>
 </form>
 
 
